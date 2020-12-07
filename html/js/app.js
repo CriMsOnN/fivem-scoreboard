@@ -11,7 +11,7 @@ window.addEventListener("message", (e) => {
         $(".players").html("")
         $(".jobs").html("")
         $(".players").append(`
-            <span id="player">Your ID: ${data.playerName} || OnlinePlayers: ${data.connected} / ${data.maxPlayers} || Your Ping: ${data.playerPing}</span>
+            <span id="player">Your ID: ${data.playerID} || OnlinePlayers: ${data.connected} / ${data.maxPlayers} || Your Ping: ${data.playerPing}</span>
         `)
     }
      else if (data.action == "updateJobs") {
